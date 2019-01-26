@@ -1,6 +1,6 @@
 PURPOSE:
 
-The purpose of this lab is to construct a multi-threaded web server using POSIX threads (pthreads) in C language to learn about thread programming and synchronization methods. Our web server will be able to handle any file type: HTML, GIF, JPEG, TXT, etc. and of any arbitrary size. It should handle a limited portion of the HTTP web protocol (namely, the GET command to fetch a web page / files).
+The purpose is to construct a multi-threaded web server using POSIX threads (pthreads) in C language to learn about thread programming and synchronization methods. Our web server will be able to handle any file type: HTML, GIF, JPEG, TXT, etc. and of any arbitrary size. It should handle a limited portion of the HTTP web protocol (namely, the GET command to fetch a web page / files).
 
 HOW TO USE:
 
@@ -8,9 +8,7 @@ Extract "testing.tar" and use it as your web server root directory. Run your web
 
 ./web_server <port> <path_to_testing>/testing <num_dispatch> <num_worker> <dynamic_flag> <queue_len> <cache_entries>
 
-**** Pick a random number other than 9000 from (1024 to 65536) to avoid collisions with other groups ****
-For example, to run the web server at port 9000, with root directory "/home/student/joe/testing" with 100 dispatch and worker threads,
-queue length 100 run the following command
+For example, to run the web server at port 9000, with root directory "/home/student/joe/testing" with 100 dispatch and worker threads, queue length 100 run the following command
 
 ./web_server 9000 /home/student/joe/testing 100 100 0 100 100
 
